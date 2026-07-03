@@ -1,0 +1,1 @@
+<?php include '../includes/auth.php'; include '../includes/config.php'; $r=$conn->query('SELECT * FROM bookings'); while($b=$r->fetch_assoc()) echo $b['name'].' - '.$b['status'].'<br>'; ?>

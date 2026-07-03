@@ -1,0 +1,1 @@
+<?php include '../includes/auth.php';?><h1>Dashboard</h1><a href='bookings.php'>Bookings</a>

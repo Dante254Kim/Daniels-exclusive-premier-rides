@@ -1,0 +1,1 @@
+<?php include 'includes/header.php';?><h1>Contact</h1><p>Email: info@example.com</p><?php include 'includes/footer.php';?>

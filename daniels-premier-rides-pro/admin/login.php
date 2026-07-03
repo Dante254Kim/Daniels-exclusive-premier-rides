@@ -1,0 +1,2 @@
+<?php session_start(); if($_POST){ if($_POST['user']=='admin' && $_POST['pass']=='admin123'){$_SESSION['admin']=1; header('Location: dashboard.php');}} ?>
+<form method='post'><input name='user'><input type='password' name='pass'><button>Login</button></form>

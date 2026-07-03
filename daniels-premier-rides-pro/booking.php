@@ -1,0 +1,4 @@
+<?php include 'includes/config.php'; include 'includes/header.php';
+if($_POST){$stmt=$conn->prepare("INSERT INTO bookings(name,phone,pickup,destination,status) VALUES(?,?,?,?, 'Pending')");
+$stmt->bind_param("ssss",$_POST['name'],$_POST['phone'],$_POST['pickup'],$_POST['destination']);$stmt->execute();echo "Request submitted";}
+?><h1>Book a Ride</h1><form method='post'><input name='name' placeholder='Name' required><input name='phone' placeholder='Phone' required><input name='pickup' placeholder='Pickup' required><input name='destination' placeholder='Destination' required><button class='btn'>Submit</button></form><?php include 'includes/footer.php';?>

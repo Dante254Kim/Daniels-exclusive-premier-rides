@@ -1,0 +1,1 @@
+<?php include '../includes/auth.php';?><h1>Manage Vehicles</h1>
